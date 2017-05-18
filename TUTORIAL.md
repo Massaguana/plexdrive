@@ -12,6 +12,9 @@ apt-get install fuse
 2. Create your own client id and client secret (see [https://rclone.org/drive/#making-your-own-client-id](https://rclone.org/drive/#making-your-own-client-id)).
 3. Create a systemd startup script for automatic startup on boot
 ```
+sudo touch /etc/systemd/system/plexdrive.service
+sudo nano /etc/systemd/system/plexdrive.service
+```
 # /etc/systemd/system/plexdrive.service
 
 [Unit]
